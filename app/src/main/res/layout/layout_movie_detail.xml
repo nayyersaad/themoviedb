@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/rlMediaWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <ImageView
+                android:id="@+id/ivMovieBackDrop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d150"
+                android:scaleType="centerCrop"
+                android:background="@color/colorAccent"/>
+
+            <ImageView
+                android:id="@+id/ivMoviePoster"
+                android:layout_width="@dimen/d75"
+                android:layout_height="@dimen/d100"
+                android:layout_margin="@dimen/d16"
+                android:scaleType="centerCrop"
+                android:background="@color/colorAccent"
+                android:layout_alignBottom="@+id/ivMovieBackDrop" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/rlMediaWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d16"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMovieName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/d_title"
+                android:textStyle="bold"
+                android:text="@string/app_name"/>
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d8"
+                android:textSize="@dimen/d_sub_heading"
+                android:text="@string/app_name"/>
+
+            <TextView
+                android:id="@+id/tvReleaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d8"
+                android:textSize="@dimen/d_body_one"
+                android:text="@string/app_name"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>
